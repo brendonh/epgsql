@@ -33,7 +33,7 @@
                           | {ssl_opts, list()} % ssl:option(), see OTP ssl_api.hrl
                           | {timeout, timeout()}
                           | {async, pid()}.
--type connect_error() :: #error{}.
+-type connect_error() :: #error{} | binary().
 -type query_error() :: #error{}.
 
 -type bind_param() ::
